@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Login</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">. </div>
+    <div class="container-2">
+        <form action="submit" id="loginForm">
+            <div class="titulo">
+                <h1>Portal do Colaborador FertMinas</h1>
+            </div>
+            <div class="campo-input">
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username">
+            </div>
+            <div class="campo-input">
+                <label for="password">Senha:</label>
+                <input type="password" id="password">
+            </div>
+            <button>Entrar</button>
+            <p class="esqueceu-senha">Esqueceu sua senha ou primeiro Login?
+                <a href="mailto:ti@fertminas.com.br">Clique Aqui</a>
+            </p>
+        </form>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script>
+        sessionStorage.removeItem('userToken');
+    </script>
+</body>
+
+</html>
